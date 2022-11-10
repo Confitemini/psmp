@@ -12,10 +12,6 @@
         # installroot: "{{ psmp_extract_folder }}/{{ psmp_component_folder }}"
         # state: present
 
-- name: Check PSMP service status
-  stat:
-    path: "/etc/init.d/psmpsrv"
-  register: psmp_service_info
 
 - name: Set psmp exists
   set_fact:
